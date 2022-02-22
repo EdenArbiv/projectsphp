@@ -1,0 +1,28 @@
+<div class="addcar">
+
+    <form (ngSubmit)="_data.PostData(myform.value)" #myform="ngForm">
+        <h4>Enter Producer:</h4>
+        <select name="car_id" ngModel >
+            <option value="">select producer</option>
+            <option value="1">Audi</option>
+            <option value="2">Tesla</option>
+            <option value="3">Toyota</option>
+            <option value="4">Skoda</option>
+            <option value="5">Kia</option>
+        </select>
+        <br>
+        <h4>Enter Image URL:</h4>
+        <input type="text"  name="image" ngModel>
+        <br>
+        <h4>Enter Year:</h4>
+        <input type="number" name="year" ngModel>
+        <br>
+        <h4>Enter Doors:</h4>
+        <input type="number" name="doors" ngModel>
+        <br>
+        <h4>Enter Maximum speed:</h4>
+        <input type="number" name="Maximum_speed" ngModel>
+        <br>
+        <input type="submit" value="Add car" >
+    </form>
+</div>

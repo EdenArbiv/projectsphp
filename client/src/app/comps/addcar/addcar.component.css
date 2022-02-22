@@ -1,0 +1,15 @@
+.addcar{
+    padding: 5% 35%;
+   
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+form >input, select{
+    width: 300px;
+}

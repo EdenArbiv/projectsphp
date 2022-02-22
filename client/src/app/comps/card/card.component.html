@@ -1,0 +1,11 @@
+<div class="card" #{{item.id}}>
+    <img src={{item.image}} alt="img">
+    <h3>{{item.producer}}<img class="icon" src={{item.icon}} alt="icon"></h3>
+    
+    <p>doors: <b>{{item.doors}}</b>
+    <br>
+    Maximum speed: <b>{{item.Maximum_speed}}</b>
+    <br>
+    year: <b>{{item.year}}</b></p>
+    <button (click)="this._data.DeleteData(item.id)">delete</button>
+</div>
