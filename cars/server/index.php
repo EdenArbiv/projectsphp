@@ -18,12 +18,11 @@ inner join producer on cars.car_id = producer.id;";
 
 $result = mysqli_query($conn, $sql);
 
-$data = array();
-
-while($row = mysqli_fetch_array($result)){
-    $data[] = $row;
+$rows = array();
+while($r = mysqli_fetch_assoc($result)) {
+    $rows[] = $r;
 }
 
-echo json_encode($data);
+echo json_encode($rows);
 
 ?>
