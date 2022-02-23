@@ -1,6 +1,6 @@
 import { DataService } from './../../services/data.service';
-import { Component, OnInit, Input } from '@angular/core';
-import Car from 'src/app/models/car.model';
+import { Component, OnInit } from '@angular/core';
+
 
 
 

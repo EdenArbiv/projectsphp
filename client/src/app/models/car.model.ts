@@ -1,6 +1,7 @@
 export default interface Car{
+    id:string,
     car_id:number,
-    Producer:string,
+    producer:string,
     icon:string,
     doors:number,
     image:string,
