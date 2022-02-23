@@ -10,8 +10,6 @@ header("Access-Control-Allow-Methods: *");
 $request_body = file_get_contents('php://input');
 $data = json_decode($request_body);
 
-
-echo json_encode($request_body);
 if(isset($data)){
 
 $sql = "DELETE FROM cars WHERE id =$data";
