@@ -7,8 +7,7 @@ header("Access-Control-Allow-Origin: *");
 header('Access-Control-Allow-Headers: X-Requested-With, content-type, access-control-allow-origin,access-control-allow-headers');
 header("Access-Control-Allow-Methods: *");
 
-$request_body = file_get_contents('php://input');
-$data = json_decode($request_body);
+$data = file_get_contents('php://input');
 
 if(isset($data)){
 
